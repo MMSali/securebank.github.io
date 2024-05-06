@@ -42,7 +42,7 @@ nav a:hover {
 
 .top-right {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 20px;
 }
 
@@ -75,12 +75,14 @@ footer {
     padding: 15px;
     color: white;
     text-align: center;
+    /* Remove the fixed position from the footer */
     position: static;
     width: 100%;
     bottom: 0;
     font-size: 0.9rem;
 }
 
+/* Style the form section */
 .form-section {
     padding: 30px;
     margin: 20px auto;
@@ -90,6 +92,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Style form inputs and labels */
 .form-section label {
     display: block;
     margin-bottom: 8px;
@@ -119,6 +122,7 @@ footer {
     background-color: #003366;
 }
 
+/* Style the "Join Us" link */
 .form-section a {
     color: #004d99;
     text-decoration: none;
@@ -129,6 +133,7 @@ footer {
     text-decoration: underline;
 }
 
+/* Mobile responsive styling */
 @media (max-width: 768px) {
     header {
         text-align: left;
@@ -145,14 +150,14 @@ footer {
     }
 
     .top-right {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+        position: static;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
     .form-section,
     .contact-form-section {
-        max-width: 300px;
-        padding: 20px;
+        max-width: 300px; /* Set max-width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
     }
 }
