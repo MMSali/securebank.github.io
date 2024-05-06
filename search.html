@@ -2,109 +2,9 @@
 <html>
 
 <head>
-    <title>Secure Bank - Search</title>
-    <style>
-        /* Styling consistent with other pages */
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-        }
-
-        header {
-            background-color: #004d99;
-            padding: 20px;
-            color: white;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            background-color: #004d99;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #003366;
-        }
-
-        .top-right {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-
-        .top-right a,
-        .top-right form {
-            margin-left: 10px;
-        }
-
-        .top-right input {
-            padding: 5px 10px;
-            border-radius: 5px;
-            border: none;
-        }
-
-        section {
-            padding: 20px;
-            background-color: white;
-            margin: 20px auto;
-            max-width: 800px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #004d99;
-        }
-
-        footer {
-            background-color: #004d99;
-            padding: 10px;
-            color: white;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Mobile responsive styling */
-        @media (max-width: 768px) {
-            header {
-                text-align: left;
-                padding: 10px;
-            }
-
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav a {
-                margin: 5px 0;
-            }
-
-            .top-right {
-                position: static;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-        }
-    </style>
+    <title>Credit Cards</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
     <!-- Link Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
 </head>
@@ -119,7 +19,7 @@
                 <input type="text" name="query" placeholder="Search" required>
             </form>
         </div>
-        <h1>Secure Bank - Search</h1>
+        <h1>Secure Bank - Login</h1>
     </header>
 
     <!-- Navigation -->
@@ -130,27 +30,18 @@
         <a href="credit_cards.html">Credit Cards</a>
     </nav>
 
-    <!-- Search Results Section -->
-    <section>
-        <h2>Search Results</h2>
-        <!-- Form to redirect the user based on the search query -->
-        <form id="search-redirect" action="" method="GET">
-            <input type="hidden" name="query" value="">
-            <noscript>
-                <p>Please enable JavaScript to use the search feature.</p>
-            </noscript>
+    <!-- Login Section -->
+    <div class="form-section">
+        <h2>Login</h2>
+        <form action="#">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
         </form>
-        <!-- Handle search results or errors -->
-        <div id="search-results">
-            <!-- If the URL query contains a search term, handle it -->
-            <form action="">
-                <input type="hidden" name="query" value="">
-                <noscript>
-                    <p>We couldn't find any results for the query. Please try another search query.</p>
-                </noscript>
-            </form>
-        </div>
-    </section>
+        <p>Not a member? <a href="join_us.html">Join Us</a></p>
+    </div>
 
     <!-- Footer -->
     <footer>
